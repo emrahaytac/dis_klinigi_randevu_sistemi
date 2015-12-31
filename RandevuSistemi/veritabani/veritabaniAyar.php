@@ -12,7 +12,7 @@ class VeriTabaniBaglanti
         try{
            $this->dns = 'mysql:host=localhost;dbname=sysrandevu';
            $this->user = 'root';
-           $this->pass = '12345';
+           $this->pass = '*******';
            $this->pdo = new PDO($this->dns,$this->user,$this->pass);
            $this->pdo->exec('SET CHARCTER UTF-8');
            
