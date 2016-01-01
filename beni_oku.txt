@@ -1,6 +1,6 @@
 Uygulamayı çalıştırmak için kaynak kodları  ../xammp/htdocs içerisine yapıştırın.
 database klasöründe bulunan database.sql'i MySQL Workbench kullanarak önce sysrandevu adında veritabanı oluşturun ve import edin.
-Uygulamayı çalıştırdığınızda yetkili girişi kısmında eposta olarak ufukpalavar_52@hotmail.com ve şifre olarak 123456 yı kullanabilirsiniz.
+Uygulamayı çalıştırdığınızda yetkili girişi kısmında eposta olarak admin@hotmail.com ve şifre olarak 123456 yı kullanabilirsiniz.
 Giriş yaptığınızda yönlendirildiğiniz panelde admin ve doktor ekleyebilirsiniz. Admin eklediğnizde profil oluşturulacak ve şifre "AdıSoyadı"
 şeklinde olacaktır. Doktor eklediğnizde doktor veritabanına eklenecektir ve bu panelde bulunan doktor listesinde profil oluştura tıkladığınızda
 profil oluşturulacak ve şifre aynen adimindeki gibi olacaktır. Eğer isterseniz oluşturduğunuz profille giriş yapıp şifre değiştirebilirsiniz. 
