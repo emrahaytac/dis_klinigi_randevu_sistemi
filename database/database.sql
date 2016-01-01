@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (4,'Admin52','Ufuk','Palavar','ufukpalavar_52@hotmail.com','0(531) 514 14 50','1993-01-01');
+INSERT INTO `admin` VALUES (4,'Admin52','Ufuk','Palavar','admin@hotmail.com','0(531) 514 14 50','1993-01-01');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +59,7 @@ CREATE TABLE `doktor` (
   `email` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL,
   `tel` varchar(255) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -108,7 +108,7 @@ CREATE TABLE `iletisim` (
   `email` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL,
   `mesaj` text COLLATE utf8_turkish_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,7 +143,7 @@ CREATE TABLE `kullanicigiris` (
 
 LOCK TABLES `kullanicigiris` WRITE;
 /*!40000 ALTER TABLE `kullanicigiris` DISABLE KEYS */;
-INSERT INTO `kullanicigiris` VALUES ('ufukpalavar_52@hotmail.com','44209a6a592dea91bcf7d4dd53e47a5a',1,NULL),('ufukpalavar52@gmail.com','44209a6a592dea91bcf7d4dd53e47a5a',0,'dist/resimler/doktor/10/10.jpg');
+INSERT INTO `kullanicigiris` VALUES ('admin@hotmail.com','44209a6a592dea91bcf7d4dd53e47a5a',1,'dist/resimler/admin/4/4.jpg'),('ufukpalavar52@gmail.com','44209a6a592dea91bcf7d4dd53e47a5a',0,'dist/resimler/doktor/10/10.jpg');
 /*!40000 ALTER TABLE `kullanicigiris` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -198,7 +198,7 @@ CREATE TABLE `musteri_detay` (
   PRIMARY KEY (`detay_id`),
   KEY `fk_musteri_id` (`musteri_id`),
   CONSTRAINT `fk_musteri_id` FOREIGN KEY (`musteri_id`) REFERENCES `musteri` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -251,4 +251,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-31 13:05:57
+-- Dump completed on 2016-01-01 21:38:44
