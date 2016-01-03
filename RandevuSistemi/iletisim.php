@@ -82,7 +82,10 @@ and open the template in the editor.
 
         </div>        
     </div>
-</div>   
+</div>
+<?php
+if (isset($_SESSION['admin_id'])) {
+?>
 <br><br>
 <div class="container">
     <div class="panel-group">
@@ -127,7 +130,8 @@ and open the template in the editor.
             </div>
         </div>
     </div>
-</div>        
+</div>
+<?php } ?>
 <br><br>
 <?php
 $header->footer();

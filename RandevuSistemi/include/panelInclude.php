@@ -101,7 +101,7 @@ class PanelInclude
             
              <div class="col-md-2" >
 
-                    <a style="text-decoration: none; color: black;" href="<?= $this->path ?>" class="hover">
+                    <a style="text-decoration: none; color: black;" href="<?= $this->path ?>iletisim.php" class="hover">
                     <img src="<?= $this->path ?>dist/resimler/iconlar/ziyaretci.png" style="width: 120px; height: 120px;"/><br>
                     <strong>Ziyaretçi Mesajları</strong></a>
              </div>   
